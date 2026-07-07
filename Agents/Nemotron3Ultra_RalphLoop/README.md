@@ -6,7 +6,7 @@ on Together AI via [Deep Agents](https://github.com/langchain-ai/deepagents).
 
 ## The pattern
 
-<img src="ralph_loop_diagram.png" alt="Ralph Mode for Deep Agents — the task feeds a DeepAgent whose work persists in the filesystem, looped until done" width="560">
+<img src="../../images/tdiagram-flowchart-c30c4dee.png" alt="Ralph loop flowchart — each iteration invokes the agent with a fresh context; work persists to the filesystem, and the loop exits on DONE.md or max iterations" width="800">
 
 ```
 while not done:

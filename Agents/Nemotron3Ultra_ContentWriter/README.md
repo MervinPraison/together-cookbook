@@ -15,6 +15,8 @@ with two deliberate changes:
 
 ## How it's configured (files, not code)
 
+<img src="../../images/tdiagram-architecture-008b7881.png" alt="Content writer architecture — AGENTS.md is injected in full every turn, skills are advertised by name and loaded on demand, and finished content lands in output/" width="800">
+
 The agent's behavior lives in plain files, loaded by the Deep Agents harness:
 
 - **`AGENTS.md`** — always-on memory: brand voice, writing standards, content

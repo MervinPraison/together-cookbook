@@ -76,8 +76,9 @@ harness: a planning tool (`write_todos`), filesystem tools (`ls`, `read_file`, `
 particularly well suited for complex agentic workflows that require reasoning, planning,
 tool use, and multi-step execution. The agent is sandboxed to the workspace with
 `FilesystemBackend(root_dir=work_dir, virtual_mode=True)` — paths are virtualized under
-the work dir and traversal outside it is blocked. You can also use OpenShell backend
-sandbox as a more robust alternative as well. There is no checkpointer and no thread
+the work dir and traversal outside it is blocked. You can also use
+[OpenShell](https://docs.langchain.com/oss/python/integrations/providers/nvidia#sandboxed-agents-with-openshell)
+backend sandbox as a more robust alternative as well. There is no checkpointer and no thread
 reuse: every `agent.invoke()` is a fresh conversation, which is exactly what Ralph wants.
 
 Shell access is intentionally off (`execute` requires a sandbox backend). If you want the

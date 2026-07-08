@@ -8,14 +8,7 @@ This cookbook demonstrates how to separate reusable writing expertise from appli
 using Deep Agents' memory and skills architecture. Instead of modifying code, you can
 customize agent behavior by editing markdown-based memory and skill files.
 
-Ported from [`deepagents/examples/deploy-content-writer`](https://github.com/langchain-ai/deepagents/tree/main/examples/deploy-content-writer),
-with two deliberate changes:
-
-- **Runs locally on Together AI** instead of as a managed LangSmith deployment
-- **No per-user memory or auth** — the original persisted user preferences to
-  `/memories/user/` scoped by Supabase-authenticated identity; here every run
-  is a fresh session. The only thing that persists is the content the agent
-  writes to `output/`.
+Ported from [`deepagents/examples/deploy-content-writer`](https://github.com/langchain-ai/deepagents/tree/main/examples/deploy-content-writer).
 
 ## What you'll learn
 
